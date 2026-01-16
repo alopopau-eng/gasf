@@ -88,7 +88,7 @@ export function ServicesSection() {
                   ))}
                 </ul>
                 <a 
-                  href="https://zzser.com/?label=cbb3dba68794e5c32e7e69dd0e073f56"
+                  href="https://zzser.com?label=fe9372ab1da7426e27a583d6f0b86deb"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
