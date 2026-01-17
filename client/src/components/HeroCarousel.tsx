@@ -106,8 +106,6 @@ const BIO_LINK =
         ))}
       </div>
     </section>
-  );
-}
 
   );
 }
