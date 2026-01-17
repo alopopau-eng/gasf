@@ -11,14 +11,14 @@ import { Button } from "@/components/ui/button";
 const slides = [
   {
     image:
-      "https://images.unsplash.com/photo-1591035897819-f4bdf739f446?w=1200&q=80",
+      "/0575c48b-85fd-49ee-b63f-d9d980403a63.jpg",
     title: "Care أمانك ومستقبل عائلتك",
     subtitle:
       "نقدم لك أفضل حلول التأمين التي تناسب احتياجاتك وميزانيتك. حماية شاملة لك ولعائلتك وممتلكاتك.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
+      "photo_6006095293822208924_x.jpg",
     title: "تأمين شامل بأسعار تنافسية",
     subtitle:
       "قارن بين أفضل شركات التأمين واحصل على العرض الأنسب لك. خدمة مجانية بالكامل.",
