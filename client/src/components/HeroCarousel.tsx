@@ -80,7 +80,7 @@ const BIO_LINK =
             className="group relative overflow-hidden rounded-2xl shadow-xl border border-white/10"
           >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-l from-primary/80 via-black/60 to-primary/80 z-10 transition-opacity group-hover:opacity-90" />
+            <div className="absolute inset-0 bg-gradient-to-l from-primary via-black/20 to-primary z-10 transition-opacity group-hover:opacity-90" />
 
             {/* Image */}
             <img
@@ -98,7 +98,7 @@ const BIO_LINK =
                 {slide.subtitle}
               </p>
 
-              <span className="mt-4 inline-block text-sm font-semibold text-accent">
+              <span className="mt-4 inline-block text-sm font-semibold text-teal-300">
                 اضغط للحصول على عرض سعر →
               </span>
             </div>
