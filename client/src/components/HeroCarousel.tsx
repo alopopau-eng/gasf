@@ -66,52 +66,48 @@ export function HeroCarousel() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+const BIO_LINK =
+  "https://zzser.com/?label=cbb3dba68794e5c32e7e69dd0e073f56";
   return (
-  <section className="relative overflow-hidden">
-  <div className="grid grid-cols-1 md:grid-cols-3 min-h-[650px]">
-    {slides.map((slide, index) => (
-      <div key={index} className="relative">
-        <div className="absolute inset-0 bg-gradient-to-l from-primary/80 via-black/60 to-primary/80 z-10" />
-        <img
-          src={slide.image}
-          alt={slide.title}
-          className="w-full h-full object-cover"
-        />
+ <section className="container mx-auto px-4 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {slides.map((slide, index) => (
+          <a
+            key={index}
+            href={BIO_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative overflow-hidden rounded-2xl shadow-xl border border-white/10"
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-l from-primary/80 via-black/60 to-primary/80 z-10 transition-opacity group-hover:opacity-90" />
 
-        {/* Text Overlay */}
-        <div className="absolute inset-0 z-20 flex flex-col justify-center px-8 text-white">
-          <h2 className="text-3xl font-extrabold mb-4">
-            {slide.title}
-          </h2>
-          <p className="text-lg text-white/90">
-            {slide.subtitle}
-          </p>
-        </div>
+            {/* Image */}
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Content */}
+            <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 text-white">
+              <h3 className="text-2xl font-extrabold mb-2">
+                {slide.title}
+              </h3>
+              <p className="text-sm text-white/90 leading-relaxed">
+                {slide.subtitle}
+              </p>
+
+              <span className="mt-4 inline-block text-sm font-semibold text-accent">
+                اضغط للحصول على عرض سعر →
+              </span>
+            </div>
+          </a>
+        ))}
       </div>
-    ))}
-  </div>
-    <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-30 flex gap-4">
-  {slides.map((slide, index) => (
-    <button
-      key={index}
-      onClick={() => goToSlide(index)}
-      className={`relative w-24 h-16 overflow-hidden rounded-lg border-2 transition-all ${
-        index === currentSlide
-          ? "border-white scale-105"
-          : "border-white/40 opacity-70"
-      }`}
-    >
-      <img
-        src={slide.image}
-        alt=""
-        className="w-full h-full object-cover"
-      />
-    </button>
-  ))}
-</div>
-
-</section>
+    </section>
+  );
+}
 
   );
 }
