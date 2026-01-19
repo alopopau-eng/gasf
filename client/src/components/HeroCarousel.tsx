@@ -67,7 +67,7 @@ export function HeroCarousel() {
     }
   };
 const BIO_LINK =
-  "https://zzser.com?label=fe9372ab1da7426e27a583d6f0b86deb";
+  "#";
   return (
  <section className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
